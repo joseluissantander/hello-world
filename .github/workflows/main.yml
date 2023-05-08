@@ -1,0 +1,9 @@
+name: Hola Mundo Workflow
+on: workflow_dispatch
+      
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print greeting
+        run: echo "Hola Mundo!"
