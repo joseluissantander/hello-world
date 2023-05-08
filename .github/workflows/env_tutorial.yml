@@ -15,7 +15,7 @@ jobs:
           echo "The run id is: $GITHUB_RUN_ID"
           echo "The GitHub Actor's username is: $GITHUB_ACTOR"
       - name: step 2
-        run: echo "The run id is: $GITHUB_RUN_ID"
+        run: echo "The run id is $GITHUB_RUN_ID"
         
   job2:
     runs-on: ubuntu-latest
