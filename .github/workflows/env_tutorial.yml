@@ -9,7 +9,13 @@ jobs:
       API_KEY: OWKWOQ124
     steps:
       - name: step1
-        run: echo "The API key is :${{secrets.API_KEY}}"
+        run: | 
+          echo "The job_id is: $GITHUB_JOB" # reference the default environment variables
+          echo "The id of this action is: $GITHUB_ACTION" # reference the default environment variables
+          echo "The run id is: $GITHUB_RUN_ID"
+          echo "The GitHub Actor's username is: $GITHUB_ACTOR"
+      - name: step 2
+        run: echo "The run id is: $GITHUB_RUN_ID"
         
   job2:
     runs-on: ubuntu-latest
