@@ -1,4 +1,4 @@
-name: buil d
+name: build
 on: push
 jobs:
   job1:
